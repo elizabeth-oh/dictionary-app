@@ -1,15 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Dictionary from './Dictionary'
 
 function App() {
   return (
     <div className="container">
       <div className="App">
         <header className="App-header">
-          <p>
-            HELLO
-          </p>
+          Dictionary
         </header>
+        <Dictionary />
+        <footer>
+          Coded by Elizabeth Oh
+        </footer>
       </div>
     </div>
   );
