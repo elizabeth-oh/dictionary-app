@@ -6,13 +6,15 @@ export default function Meaning(props) {
             <h3>{props.meaning.partOfSpeech}</h3>
             {props.meaning.definitions.map(function(definition,index) {
                 return (
-                    <div key={index}>
-                        {definition.definition}
-                        <br />
-                        <em>
-                            {definition.example}
-                        </em>
-                    </div>
+                    <ul>
+                        <li key={index} className="definition">
+                            {definition.definition}
+                            <br />
+                            <em>
+                                {definition.example}
+                            </em>
+                        </li>
+                    </ul>
                 )
             })}
         </div>

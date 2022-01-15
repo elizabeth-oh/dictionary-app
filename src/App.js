@@ -10,7 +10,7 @@ function App() {
         </header>
         <Dictionary />
         <footer>
-          Coded by Elizabeth Oh
+          <a href="https://github.com/elizabeth-oh/dictionary-app" target="_blank" rel="noreferrer">Coded</a> by Elizabeth Oh
         </footer>
       </div>
     </div>
