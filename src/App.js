@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Dictionary from './Dictionary'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         </header>
         <Dictionary />
         <footer>
-          <a href="https://github.com/elizabeth-oh/dictionary-app" target="_blank" rel="noreferrer">Coded</a> by Elizabeth Oh
+          <a href="https://github.com/elizabeth-oh/dictionary-app" target="_blank" rel="noopener noreferrer">Coded</a> by Elizabeth Oh
         </footer>
       </div>
     </div>

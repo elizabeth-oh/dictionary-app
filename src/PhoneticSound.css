@@ -1,0 +1,12 @@
+.playIcon {
+    width: 25px;
+    height: 25px;
+    display: in-line;
+    position: relative; 
+    top: 7px;
+    margin-right: 8px;
+}
+
+.playIcon:hover {
+    cursor: pointer;
+}
