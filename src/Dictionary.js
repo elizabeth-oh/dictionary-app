@@ -3,6 +3,7 @@ import axios from 'axios';
 import Results from './Results';
 import './Dictionary.css'
 
+
 export default function Dictionary() {
     let [keyword, setKeyword] = useState(""); 
     let [results, setResults] = useState(null);
@@ -22,10 +23,12 @@ export default function Dictionary() {
     }
 
     return (
-        <div className = "dictionary">
-            <form className = "searchForm" onSubmit = {handleSubmit}>
-                <input type = "search" placeholder = "search here" onChange = {handleChange}/>
-                <input type = "submit" value="Search" />
+        <div className="dictionary">
+            <form className="input-group rounded" onSubmit = {handleSubmit}>
+                <input type="search" className="form-control rounded" placeholder="Search" onChange = {handleChange} aria-label="Search" aria-describedby="search-addon" />
+                <span className="input-group-text border-0" id="search-addon">
+                    <i className="fas fa-search"></i>
+                </span>
             </form>
             <Results results={results} />
         </div>

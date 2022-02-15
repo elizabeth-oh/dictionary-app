@@ -1,3 +1,8 @@
+header {
+  text-align: center;
+  margin: 20px 0px;
+}
+
 footer {
   text-align: center;
   font-size: x-small;
@@ -6,4 +11,13 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+.phoneticText {
+  position: relative;
+  top: -17px;
+}
+
+.App {
+  font-family: 'EB Garamond', serif;
 }

@@ -1,13 +1,16 @@
 import './App.css';
 import React from 'react';
 import Dictionary from './Dictionary'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="container">
       <div className="App">
         <header className="App-header">
-          Dictionary
+          <h1>
+            Dictionary
+          </h1>
         </header>
         <Dictionary />
         <footer>
