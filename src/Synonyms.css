@@ -1,13 +1,15 @@
 .synonyms {
-    border-radius: 20px;
     border-collapse: separate;
 }
 
 .list-group-item {
     margin: 0px 1px;
-    padding: 1px 1px;
-    border-radius: 20px;
     font-size: x-small;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px inset;
     border-collapse: separate !important;
+}
+
+.synonymsHeader{
+    color:rgb(85%, 62%, 36%);
+    font-size: small;
 }

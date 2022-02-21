@@ -1,20 +1,17 @@
 section {
     padding: 5px 20px;
-    background-color: #e8e8e4;
+    background-color: rgba(255, 255, 255, .9);
     border-radius: 12px;
     margin: 10px auto;
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px 0px inset;
 }
 
-form {
-    background: #FFAFBD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.search {
+    padding: 20px 20px;
 }
 
 .dictionary {
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -23,4 +20,8 @@ form {
     position: relative;
     left: 35px;
     top: -25px;
+}
+
+.headline{
+    font-style: italic;
 }

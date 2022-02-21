@@ -11,9 +11,15 @@ export default function PhoneticSound(props) {
         audio.play();
     }
 
-    return (
-        <div>
-            <img src={playIcon} alt="Play button" className="playIcon" onClick={ () => playPhoneticAudio() }  />
-        </div>
-    )
+    if (props.audioUrl) {
+        return (
+            <div>
+                <img src={playIcon} alt="Play button" className="playIcon" onClick={ () => playPhoneticAudio() }  />
+            </div>
+        )
+    } else {
+        return null
+    }
+
+    
 }

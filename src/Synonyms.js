@@ -5,6 +5,7 @@ export default function Synonyms(props) {
     if (props.synonyms) {
         return(
             <div>
+                <span className="synonymsHeader">Synonyms: </span>
                 <ul className="synonyms list-group list-group-horizontal-sm flex-wrap">
                     {props.synonyms.map(function(synonym,index) {
                         return(

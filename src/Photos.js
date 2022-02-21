@@ -1,9 +1,8 @@
 import React from 'react';
+import './Photos.css'
 
 export default function Photos(props) {
-
     if (props.photos) {
-        console.log(props.photos[0].src.small)
         return (
             <section>
                 <div className="row">
@@ -11,7 +10,7 @@ export default function Photos(props) {
                             return(
                                 <div className="col-4" key={index}>
                                     <a href={photo.src.original} target="_blank" rel="noopener noreferrer">
-                                        <img className="img-fluid" src={photo.src.landscape} alt="photos" />
+                                        <img className="img-fluid photos" src={photo.src.landscape} alt="photos" />
                                     </a>
                                 </div>
                             )
