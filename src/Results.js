@@ -12,24 +12,24 @@ export default function Results(props) {
           <div className = "results">
             <section>
               <h2>{props.results.word}</h2>
-              {props.results.phonetics.map(function(phonetic, index){
-                if (index < 1) {
-                return (
-                  <div key={index}>
-                    <Phonetic phonetic={phonetic} />
-                  </div>
-                )} else {return null}
-              })}
+                <div>
+                  {props.results.phonetics.map(function(phonetic, index){
+                    if (index < 1) {
+                    return (
+                        <Phonetic phonetic={phonetic} key={index} />
+                    )} else {return null}
+                  })}
+                </div>
             </section>
-            {props.results.meanings.map(function(meaning, index) {
-              return (
-                <section>
-                  <div key={index}>
-                      <Meaning meaning={meaning} />
-                  </div> 
-                </section>
-              );
-              })}
+            <section>
+              <div>
+                {props.results.meanings.map(function(meaning, index) {
+                  return (
+                          <Meaning meaning={meaning} key={index}/> 
+                  );
+                  })}
+              </div>
+             </section>
           </div>
         );
       }
